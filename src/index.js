@@ -1,5 +1,11 @@
 const hello = () => 'hello, world';
 
-console.log(hello);
+const generateRandomInt = (min, max) => {
+	return (min < max)?
+    Math.floor(Math.random() * (max - min + 1)) + min:
+    Math.floor(Math.random() * (min - max + 1)) + max;
+};
 
-export { hello };
+console.log(hello());
+
+export { hello, generateRandomInt };
