@@ -1,0 +1,33 @@
+body {
+  background-color: #D9D9D9;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Центрируем центральную колонку */
+}
+.container {
+  display: flex;
+  flex-direction: row; /* Горизонтальное расположение колонок */
+  width: 100vw; /* Ширина всей страницы */
+}
+.sidebar {
+  width: 100px; /* Ширина боковых колонок */
+  background-color: transparent; /* Фон боковых колонок прозрачный */
+}
+main {
+  background-color: #F5F5F5;
+  width: 1200px; /* Ширина центральной колонки */
+  min-height: 1700px; /* Минимальная высота */
+  margin: 0 auto; /* Центрируем по горизонтали */
+  display: flex;
+  flex-direction: column; /* Вертикальное расположение элементов в центральной колонке */
+}
+header, footer {
+  background-color: #FFFFFF;
+  height: 100px; /* Высота header и footer */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Центрируем текст */
+}
+footer {
+  margin-top: auto; /* Прижимаем footer к низу */
+}
